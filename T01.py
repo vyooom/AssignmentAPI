@@ -26,6 +26,7 @@ def insertRecord():
         q2 = 'insert into api_db.entry values(%s, %s, %s, %s)'
         cursor.execute(q2, data)
         db.commit()
+        return 'Insert Complete'
 
 
 if __name__ == '__main__':
